@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  font-size: 18px;
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  color: #00252e;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+
+i {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 50px;
+  border: 1px solid #fff;
+}
+
+header {
+  background-image: url(../images/bg-hero-desktop.svg);
+  background-color: #ebfbff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px 5%;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+header nav img {
+  width: auto;
+  height: 30px;
+  margin: 7.5px 0;
+}
+
+header nav button {
+  height: 45px;
+  width: 200px;
+  color: #00252e;
+  border-radius: 50px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 1px rgba(205, 220, 224, 0.527);
+}
+
+header nav button:hover {
+  color: #808d99;
+  box-shadow: 0px 2px 10px 1px rgba(205, 220, 224, 0.527);
+}
+
+header div {
+  display: grid;
+  padding: 0 10px;
+  color: #00252e;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+header div img {
+  width: 100%;
+  height: auto;
+}
+
+header div section {
+  width: 100%;
+}
+
+header div section h1 {
+  font-size: 35px;
+  padding: 100px 150px 30px 0;
+}
+
+header div section p {
+  padding: 0 70px 0 0;
+}
+
+header div section button {
+  width: 230px;
+  height: 50px;
+  color: #fff;
+  margin: 30px 0;
+  border-radius: 50px;
+  background-color: #ff52bf;
+}
+
+header div section button:hover {
+  background-color: #ff6bc9;
+}
+
+main {
+  margin-top: 150px;
+}
+
+main div {
+  display: grid;
+  gap: 10px 200px;
+  color: #00252e;
+  margin: 40px 50px;
+  padding: 75px 100px;
+  align-items: center;
+  border-radius: 15px;
+  grid-gap: 10px 200px;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0px 2px 20px 1px rgba(214, 218, 219, 0.527);
+}
+
+main div img {
+  width: 100%;
+  height: auto;
+}
+
+main div:nth-child(2) {
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px 50px;
+}
+
+main div:nth-child(2) section {
+  order: 2;
+}
+
+main div:nth-child(2) img {
+  order: 1;
+}
+
+main div:last-child {
+  margin: 40px 50px 0 50px;
+}
+
+#getStarted {
+  width: 55%;
+  z-index: 1;
+  margin: 0 auto;
+  text-align: center;
+  padding: 70px 50px;
+  border-radius: 15px;
+  background-color: inherit;
+  transform: translateY(110px);
+  box-shadow: 0px -2px 10px 0px rgba(214, 218, 219, 0.527);
+}
+
+#getStarted h2 {
+  padding: 5px;
+}
+
+#getStarted button {
+  width: 45%;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 25px 20px;
+  border-radius: 50px;
+  background-color: #ff52bf;
+}
+
+#getStarted button:hover {
+  background-color: #ff85d2;
+}
+
+footer {
+  color: #ffffff;
+  padding: 150px 100px 0px 75px;
+  background-color: #00252e;
+}
+
+footer img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1%) hue-rotate(24deg) brightness(112%) contrast(101%);
+  margin-bottom: 30px;
+}
+
+footer div {
+  display: grid;
+  grid-gap: 0 90px;
+  grid-template-columns: 3.5fr 1fr 1fr 1fr;
+}
+
+footer div section li {
+  margin-bottom: 20px;
+}
+
+footer div section ul {
+  display: flex;
+}
+
+footer div section ul li {
+  margin-bottom: 20px;
+}
+
+footer div section ul li:first-child {
+  width: 15px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+footer .icons {
+  gap: 0 2px 0 0;
+  display: grid;
+  grid-gap: 0 2px 0 0;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer aside {
+  margin: 29px 0;
+  padding: 20px 0;
+  font-size: 14px;
+  text-align: right;
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+footer .attribution a {
+  color: #3e52a3;
+}

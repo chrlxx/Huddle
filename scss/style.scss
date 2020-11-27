@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+@import 'config';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    font-size: 18px;
+    background-color: #fff;
+    font-family:$general-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font;
+    color: $dark-cyan;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: $general-font;
+}
+
+i {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid #fff;
+}
+
+header {
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-color: $pale-cyan;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px 5%;
+    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        padding: 10px;
+        flex-wrap: wrap;
+
+        img {
+            width: auto;
+            height: 30px;
+            margin: 7.5px 0;
+        }
+
+        button {
+            height: 45px;
+            width: 200px;
+            color: $dark-cyan;
+            border-radius: 50px;
+            background-color: #fff;
+            box-shadow: 0px 2px 5px 1px hsla(193, 23%, 84%, 0.527);
+
+            &:hover {
+                color: $grayish-blue;
+                box-shadow: 0px 2px 10px 1px hsla(193, 23%, 84%, 0.527);
+            }
+        }
+    }
+
+    div {
+        display: grid;
+        padding: 0 10px;
+        color: $dark-cyan;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        section {
+            width: 100%;
+
+            h1 {
+                font-size: 35px;
+                padding: 100px 150px 30px 0;
+            }
+
+            p {
+                padding: 0 70px 0 0;
+            }
+
+            button {
+                width: 230px;
+                height: 50px;
+                color: #fff;
+                margin: 30px 0;
+                border-radius: 50px;
+                background-color: $primary-color;
+
+                &:hover {
+                    background-color: lighten($primary-color, 5%);
+                }
+            }
+        }
+    }
+}
+
+
+main {
+    margin-top: 150px;
+
+    div {
+        display: grid;
+        gap: 10px 200px;
+        color: $dark-cyan;
+        margin: 40px 50px;
+        padding: 75px 100px;
+        align-items: center;
+        border-radius: 15px;
+        grid-gap: 10px 200px;
+        grid-template-columns: 2fr 1fr;
+        box-shadow: 0px 2px 20px 1px hsla(192, 6%, 85%, 0.527);
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    div:nth-child(2) {
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 10px 50px;
+
+        section {
+            order: 2;
+        }
+        img {
+            order: 1;
+        }
+    }
+
+    div:last-child {
+        margin: 40px 50px 0 50px;
+    }
+}
+
+#getStarted {
+    width: 55%;
+    z-index: 1;
+    margin: 0 auto;
+    text-align: center;
+    padding: 70px 50px;
+    border-radius: 15px;
+    background-color: inherit;
+    transform: translateY(110px);
+    box-shadow: 0px -2px 10px 0px hsla(192, 6%, 85%, 0.527);
+
+    h2 {
+        padding: 5px;
+    }
+
+    button {
+        width: 45%;
+        color: #fff;
+        font-size: 18px;
+        margin-top: 20px;
+        padding: 25px 20px;
+        border-radius: 50px;
+        background-color: $primary-color;
+
+        &:hover {
+            background-color: lighten($primary-color, 10%);
+        }
+    }
+}
+
+footer {
+    color: #ffffff;
+    padding: 150px 100px 0px 75px;
+    background-color: $dark-cyan;
+
+    img {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1%) hue-rotate(24deg) brightness(112%) contrast(101%);
+        margin-bottom: 30px;
+    }
+
+    div {
+        display: grid;
+        grid-gap: 0 90px;
+        grid-template-columns: 3.5fr 1fr 1fr 1fr;
+
+        section {
+
+            li {
+                margin-bottom: 20px;
+            }
+
+            ul {
+                display: flex;
+                
+                li {
+                    margin-bottom: 20px;
+                }
+
+                li:first-child {
+                    width: 15px;
+                    height: 20px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    .icons {
+        gap: 0 2px 0 0;
+        display: grid;
+        grid-gap: 0 2px 0 0;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    aside {
+        margin: 29px 0;
+        padding: 20px 0;
+        font-size: 14px;
+        text-align: right;
+    }
+    
+    .attribution { 
+        font-size: 11px; text-align: center;
+        
+        a {
+            color: hsl(228, 45%, 44%);
+        }
+    }
+}
