@@ -1,0 +1,133 @@
+@media screen and (max-width:768px) {
+    header {
+    padding: 15px 5%;
+    background-image: url(../images/bg-hero-mobile.svg);
+
+        nav {
+
+            img {
+                width: 135px;
+                height: auto;
+            }
+    
+            button {
+                height: 45px;
+                width: 135px;
+            }
+        }
+
+        div {
+            grid-template-columns: 1fr;
+
+            section {
+                text-align: center;
+
+                h1 {
+                    padding: 0;
+                    font-size: 30px;
+                    margin: 0 20px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    padding: 0;
+                }
+            }
+
+        }
+    }
+
+    main {
+        margin-top: 50px;
+
+        div {
+            gap: 0;
+            grid-gap: 0;
+            padding: 30px;
+            text-align: center;
+            grid-template-columns: 1fr;
+
+            section {
+                order: 2;
+
+                h2 {
+                    padding: 10px 0;
+                }
+            }
+
+            img {
+                order: 1;
+            }
+        }
+        
+        div:nth-child(2) {
+            grid-template-columns: 1fr;
+            grid-gap: 0;
+            gap: 0;
+        }
+        
+        div:last-child {
+            margin: 0 50px;
+        }
+    }
+
+    #smallBox > #getStarted {
+        width: 80%;
+        margin: 0 auto;
+        padding: 35px 10px;
+        transform: translateY(110px);
+
+        button {
+            // width: 70%;
+            width: 200px;
+            font-size: 15px;
+            margin-top: 10px;
+            padding: 15px 10px;
+        }
+    }
+
+    footer {
+        color: #ffffff;
+        padding: 150px 20px 0 20px;
+        background-color: $dark-cyan;
+    
+        div {
+            gap: 0;
+            grid-gap: 0;
+            grid-template-columns: 1fr;
+        }
+
+        aside {
+            margin: 0;
+            padding: 20px 0;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    header {
+        padding: 15px 2.5%;
+
+        nav {
+
+            img {
+                width: 100px;
+            }
+    
+            button {
+                height: auto;
+                width: 100px;
+                padding: 10px 0;
+            }
+        }
+    }
+
+    main > div {
+        margin: 20px;
+    }
+
+    main > div:last-child {
+        margin: 0 20px;
+    }
+}
