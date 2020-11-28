@@ -60,6 +60,7 @@ header nav img {
   width: auto;
   height: 30px;
   margin: 7.5px 0;
+  cursor: pointer;
 }
 
 header nav button {
@@ -183,6 +184,7 @@ main div:last-child {
 }
 
 footer {
+  font-size: 16px;
   color: #ffffff;
   padding: 150px 50px 0px 50px;
   background-color: #00252e;
@@ -200,7 +202,14 @@ footer div {
 }
 
 footer div section li {
+  cursor: pointer;
   margin-bottom: 20px;
+}
+
+footer div section li:hover {
+  color: #ff52bf;
+  text-decoration: underline;
+  transition: 0.7s ease-in-out;
 }
 
 footer div section ul {
@@ -208,7 +217,25 @@ footer div section ul {
 }
 
 footer div section ul li {
+  cursor: default;
   margin-bottom: 20px;
+}
+
+footer div section ul li:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer div section ul li a {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+footer div section ul li a:hover {
+  color: #ff52bf;
+  text-decoration: underline;
+  transition: 0.7s ease-in-out;
 }
 
 footer div section ul li:first-child {
@@ -224,6 +251,13 @@ footer .icons {
 
 footer .icons i {
   margin: 0 10px;
+  cursor: pointer;
+}
+
+footer .icons i:hover {
+  color: #ff52bf;
+  transition: 0.7s ease-in-out;
+  border: 1px solid #ff52bf;
 }
 
 footer aside {
@@ -240,6 +274,11 @@ footer .attribution {
 
 footer .attribution a {
   color: #3e52a3;
+}
+
+footer .attribution a:hover {
+  color: #ff52bf;
+  transition: 0.7s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
